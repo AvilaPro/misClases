@@ -1,0 +1,31 @@
+*{
+    font-family: 'Segoe UI';
+}
+body{
+    margin: 0;
+}
+
+/*HEADER*/
+header{
+    height: 56px;
+    padding: 0 5%;
+}
+header > div{
+    height: 100%;
+}
+header > div > div{
+    height: 100%;
+}
+#logos > img{
+    height: 80%;
+}
+header nav{
+    display: inline-block;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+}
