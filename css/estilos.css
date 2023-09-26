@@ -5,6 +5,11 @@ body{
     margin: 0;
 }
 
+/*Clases globales*/
+.d-ib{
+    display: inline-block;
+}
+
 /*HEADER*/
 header{
     height: 56px;
@@ -17,13 +22,11 @@ header > div > div{
     height: 100%;
 }
 #logos > img{
-    height: 80%;
+    height: 40%;
 }
-header nav{
-    display: inline-block;
-}
-header ul{
-    display: inline-block;
+#logos > img:first-child{
+    padding: 0 20px 0 0;
+    border-right: solid black 3px;
 }
 header ul li{
     display: inline-block;
