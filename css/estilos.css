@@ -1,34 +1,140 @@
-*{
-    font-family: 'Segoe UI';
+* {
+  font-family: 'Segoe UI';
 }
-body{
-    margin: 0;
+
+body {
+  margin: 0;
 }
 
 /*Clases globales*/
-.d-ib{
-    display: inline-block;
+.d-ib {
+  display: inline-block;
 }
 
 /*HEADER*/
-header{
-    height: 56px;
-    padding: 0 5%;
+header {
+  height: 56px;
+  padding: 0 5%;
 }
-header > div{
-    height: 100%;
+
+header>div {
+  height: 100%;
 }
-header > div > div{
-    height: 100%;
+
+header>div:last-child {
+  float: right;
 }
-#logos > img{
-    height: 40%;
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1.5rem;
 }
-#logos > img:first-child{
+
+header>div>div {
+  height: 100%;
+}
+
+#logos>img {
+  height: 40%;
+}
+
+
+
+header ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+header div:first-child{
+  position: relative;
+  left: 35%;
+}
+header > div:first-child > nav > a:nth-child(3){
+  display: none !important;
+}
+header > div:first-child > nav > a:nth-child(4){
+  display: none !important;
+}
+header > div:first-child > nav > a:nth-child(5){
+  display: none !important;
+}
+header > div:last-child li > span{
+  display: none;
+}
+header > div:last-child a:nth-child(1){
+  display: none;
+}
+header > div:last-child a:nth-child(2){
+  display: none;
+}
+header nav{
+  display: none !important;
+}
+#logos>img:first-child {
+  padding: 0;
+  border-right: none;
+}
+#logos > img:last-child{
+  display: none;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header div:first-child{
+    position: static !important;
+    left: 0;
+  } 
+  header nav{
+    display: inline-block !important;
+  }
+  #logos>img:first-child {
     padding: 0 20px 0 0;
     border-right: solid black 3px;
+  }
+  #logos > img:last-child{
+    display: inline;
+  }
+  header > div:last-child a:nth-child(1){
+    display: inline;
+  }
+  header > div:last-child a:nth-child(2){
+    display: inline  ;
+  }
 }
-header ul li{
-    display: inline-block;
-    list-style: none;
+
+@media (min-width: 1000px){
+  header > div:first-child > nav > a:nth-child(3){
+    display: inline;
+  }
+}
+
+@media (min-width: 1070px){
+  header > div:first-child > nav > a:nth-child(4){
+    display: inline;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  header > div:first-child > nav > a:nth-child(5){
+    display: inline;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  header > div:last-child li > span{
+    display: inline;
+  }
 }
