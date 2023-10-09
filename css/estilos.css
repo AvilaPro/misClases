@@ -1,3 +1,5 @@
+@import url(./publicidadMovil.css);
+
 * {
   font-family: 'Segoe UI';
 }
@@ -8,13 +10,15 @@ body {
 
 /*Clases globales*/
 .d-ib {
-  display: inline-block;
+  display: flex;
 }
 
 /*HEADER*/
 header {
   height: 56px;
-  padding: 0 5%;
+  /* padding: 0 5%; */
+  display: flex;
+  justify-content: space-around;
 }
 
 header>div {
@@ -22,7 +26,12 @@ header>div {
 }
 
 header>div:last-child {
-  float: right;
+  /* float: right; */
+}
+header>div:last-child > ul{
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
 header a {
@@ -33,6 +42,11 @@ header a {
 
 header>div>div {
   height: 100%;
+}
+
+#logos{
+  display: flex;
+  align-items: center;
 }
 
 #logos>img {
@@ -49,10 +63,10 @@ header ul li {
 /* X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
 
-header div:first-child{
+/* header div:first-child{
   position: relative;
   left: 35%;
-}
+} */
 header > div:first-child > nav a:nth-child(3){
   display: none;
 }
@@ -72,7 +86,13 @@ header > div:last-child a:nth-child(2){
   display: none;
 }
 header nav{
-  display: none !important;
+  display: none;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 #logos>img:first-child {
   padding: 0;
@@ -84,17 +104,22 @@ header nav{
 
 /*CINTILLO*/
 #cintillo{
-  padding: 5vh 5% 5vh 7%;
+  padding: 5vh 0 !important;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 #cintillo > div{
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 #cintillo > div > div{
   width: 30%;
-  display: inline-block;
+  /* display: inline-block; */
 }
 #cintillo > div > div > img{
-  height: 12vh;
+  height: 8vh;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -114,18 +139,23 @@ header nav{
   /* border-bottom: 3px solid #107C10 */
   text-decoration: underline;
 }
-#cintillo > div > div:first-child{
+/* #cintillo > div > div:first-child{
   float: left;
-}
-#cintillo > div > div:nth-child(2){
+} */
+/* #cintillo > div > div:nth-child(2){
   position: relative;
   left: 5%;
-}
-#cintillo > div > div:last-child{
+} */
+/* #cintillo > div > div:last-child{
   float: right;
-}
+} */
 
 /*FIN CINTILLO*/
+
+/* PUBLICIDAD*/
+
+
+/* FIN PUBLICIDAD */
 
 @media print {
   #banner{
@@ -138,23 +168,13 @@ header nav{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  #cintillo{
+    padding: 5vh 15% !important;
+    flex-direction: row;
+  }
   #cintillo > div{
-    display: inline-block;
     width: 49%;
-  }
-  #cintillo > div > div{
-    width: 30%;
-    display: inline-block;
-  }
-  #cintillo > div > div:first-child{
-    float: left;
-  }
-  #cintillo > div > div:nth-child(2){
-    position: relative;
-    left: 5%;
-  }
-  #cintillo > div > div:last-child{
-    float: right;
+    justify-content: space-between;
   }
 }
 
@@ -172,7 +192,7 @@ header nav{
     left: 0;
   } 
   header nav{
-    display: inline-block !important;
+    display: flex;
   }
   #logos>img:first-child {
     padding: 0 20px 0 0;
@@ -194,6 +214,24 @@ header nav{
   header > div:first-child > nav a:nth-child(3){
     display: inline;
   }
+  #publicidad{
+    display: flex;
+    justify-content: flex-end;
+    height: 80vh;
+    background-image: url("https://assets.xboxservices.com/assets/2b/60/2b6011fe-c58f-404f-a50a-55b1114e2ccb.jpg?n=9303887_Home-Hero-1084_Gear_1904x805_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #publicidad > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    padding: 15% 10%;
+    position: static;
+  }
+
 }
 
 @media (min-width: 1070px){

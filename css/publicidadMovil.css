@@ -1,0 +1,30 @@
+#publicidad{
+    display: flex;
+    justify-content: flex-end;
+    height: 80vh;
+    background-image: url("https://assets.xboxservices.com/assets/df/ad/dfadb4c3-116c-438b-baae-7b88bec2a3e0.jpg?n=9303887_Home-Hero-0_Gear_1067x667_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #publicidad > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    padding: 5% 5%;
+    position: relative;
+    top: 100%;
+  }
+  #publicidad > div p{
+    font-size: 1.5em;
+  }
+  #publicidad > div button{
+    background-color: #8BD80A;
+    color: #054B16;
+    width: 30%;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
