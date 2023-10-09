@@ -119,7 +119,7 @@ header nav ul{
   /* display: inline-block; */
 }
 #cintillo > div > div > img{
-  height: 8vh;
+  height: 6vh;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -151,6 +151,185 @@ header nav ul{
 } */
 
 /*FIN CINTILLO*/
+
+/* GRILLA */
+#grilla{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2 , 50vw);
+  grid-template-rows: repeat(9, 50vh);
+  grid-gap: 4px;
+}
+#grilla > div{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#grilla > div > div{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#grilla > div:nth-child(1){
+  background-image: url("https://assets.xboxservices.com/assets/12/88/128845bc-6a13-49fb-82d3-872ef1377ebc.jpg?n=847774_Large-tout-0_1083x1222.jpg");
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#grilla > div:nth-child(2){
+  background-image: url("https://assets.xboxservices.com/assets/e0/33/e0330338-5ef6-446e-9f9c-185dee575f6f.jpg?n=XGP-2023_Small-tout-1084_09-18-23_475x534.jpg");
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(2) > div:first-child{
+  background-color: green;
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(2) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/e0/33/e0330338-5ef6-446e-9f9c-185dee575f6f.jpg?n=XGP-2023_Small-tout-1084_09-18-23_475x534.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(3){
+  background-image: url("https://assets.xboxservices.com/assets/5b/b8/5bb8fd57-76d1-4c77-bb9e-21fffdc4235c.jpg?n=768034_Large-tout-0_1083x1222_01.jpg");
+  height: 100vh;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(4){
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(4) > div:last-child{
+  background-color: green;
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(4) > div:first-child{
+  background-image: url("https://assets.xboxservices.com/assets/70/ed/70ede379-5707-4bc9-b9f4-e5d64dbdc803.jpg?n=Sword-Art-Online-Last-Recollection_Small-tout-0_1067x600.jpg");
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(5){
+  
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: grid;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(5) > div:first-child{
+  background-color: green;
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(5) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/0d/bf/0dbff53e-3910-4a84-a0ab-1770dc7813fe.jpg?n=EA-Sports-FC-24_Small-tout-1084_Launch_475x534.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(6){
+  
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: grid;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(6) > div:first-child{
+  background-color: green;
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(6) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/21/50/21507dbf-584d-4b0c-9058-6b4b9c375ac5.jpg?n=017392_Small-tout-1084_Open-Beta_475x534_01.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(7){
+  background-image: url("https://assets.xboxservices.com/assets/88/c4/88c4c1f0-41cf-4ddb-80dc-010ed76aa68d.jpg?n=Starfield_Home-Hero-0_Launch-2_1067x667.jpg");
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+#grilla > div:nth-child(7) > video{
+  display: none;
+}
+#grilla > div:nth-child(8){
+  
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: grid;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(8) > div:first-child{
+  background-color: green;
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(8) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/b3/e0/b3e09887-4097-4100-8bf2-6f32cb83fa13.jpg?n=029993311_Small-tout-1084_475x534_02.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(9){
+  display: grid;
+  justify-content: stretch;
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+#grilla > div:nth-child(9) > div:first-child{
+  background-color: green;
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(9) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/b6/8d/b68db33c-ba97-4763-886a-c417c752d818.jpg?n=Cyberpunk-2077_Small-tout-1084_Phantom-Liberty_475x534.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(10){
+  grid-column: 1/2;
+  grid-row: 7/8;
+  display: grid;
+  justify-content: stretch;
+}
+#grilla > div:nth-child(10) > div:last-child{
+  grid-column: 2/3;
+}
+#grilla > div:nth-child(10) > div:first-child{
+  background-image: url("https://assets.xboxservices.com/assets/3e/d9/3ed98bba-f91d-4c6c-882d-168632b54c8f.jpg?n=Lies-of-P_Small-tout-1084_475x534_04.jpg");
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(11){
+  background-image: url("https://assets.xboxservices.com/assets/8f/2c/8f2c8b82-51b1-4af5-890a-8a5512390f50.jpg?n=076548_Large-tout-0_1083x1222.jpg");
+  grid-column: 2/3;
+  grid-row: 7/9;
+}
+#grilla > div:nth-child(12){
+  background-image: url("https://assets.xboxservices.com/assets/12/34/12349a02-a6a8-4d16-8217-67c15900be8e.jpg?n=SoT_Large-tout-0_LoMI-Part-1_1083x1222_01.jpg");
+  grid-column: 1/2;
+  grid-row: 8/10;
+}
+#grilla > div:nth-child(13){
+  display: grid;
+  justify-content: stretch;
+  grid-column: 2/3;
+  grid-row: 9/10;
+}
+#grilla > div:nth-child(13) > div:first-child{
+  color: white;
+  grid-column: 1/2;
+}
+#grilla > div:nth-child(13) > div:last-child{
+  background-image: url("https://assets.xboxservices.com/assets/0c/d9/0cd968a3-568f-4b26-a10a-c61a8125905e.jpg?n=Mortal-Kombat-1_Small-tout-1084_475x534_01.jpg");
+  color: white;
+  grid-column: 2/3;
+}
+
+/* FIN DE GRILLA */
 
 /* PUBLICIDAD*/
 
@@ -207,6 +386,15 @@ header nav ul{
   }
   header > div:last-child a:nth-child(2){
     display: inline  ;
+  }
+
+  #grilla > div:nth-child(7){
+    background-image: none;
+  }
+  #grilla > div:nth-child(7) > video{
+    width: 100%;
+    display: block;
+    height: 100%;
   }
 }
 
