@@ -392,9 +392,15 @@ header nav ul{
     background-image: none;
   }
   #grilla > div:nth-child(7) > video{
-    width: 100%;
+    min-width: 100%;
     display: block;
-    height: 100%;
+    min-height: 100%;
+    background-size: contain;
+    background-position: center top;
+    overflow: hidden;
+    position: absolute;
+    z-index: -5;
+    height: auto !important;
   }
 }
 
